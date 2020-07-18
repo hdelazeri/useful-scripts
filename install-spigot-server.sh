@@ -55,6 +55,10 @@ java -jar "BuildTools.jar" --rev ${_version}
 
 sed -i 's/craftbukkit/spigot/g' spigot.conf
 
+sed -i 's/craftbukkit/spigot/g' spigot.sh
+
+sed -i 's/sleep 0.1/sleep 0.5/g' spigot.sh
+
 # Move the files to the correct locations
 echo_info "Moving files to correct location"
 
